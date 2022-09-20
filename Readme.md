@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Анастасия Митрофанова](https://up.htmlacademy.ru/htmlcss/35/user/2058105).
-* Наставник: `Неизвестно`.
+- Студент: [Анастасия Митрофанова](https://up.htmlacademy.ru/htmlcss/35/user/2058105).
+- Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
