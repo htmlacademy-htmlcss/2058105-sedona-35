@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
+  width: 1200px;
 }
 .page-header{
   background-color: #ffffff;
@@ -75,23 +76,15 @@ body {
   }
 
 .welcome{
-  position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-  background-image: url("../images/welcome-background.jpg");
-  background-repeat: no-repeat;
- background-size: 100% auto;
- min-width: 1200px;
- height: 485px;
-}
-
-.welcome::after{
-  content: url("../images/icons/welcome-bottom.svg");
-  background-position: absolute;
-  width: 1200px;
-  height: 57px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+width: 1200px;
+height: 485px;
+background-image: url("../images/icons/welcome-bottom.svg"), url("../images/welcome-background.jpg");
+background-position: center bottom, center;
+background-repeat: no-repeat;
 }
 
  .about{
@@ -100,7 +93,7 @@ body {
   text-align: center;
  }
 
- h2{
+ .heading{s
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -156,8 +149,7 @@ body {
   color: #ffffff;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  min-width: 1200px;
+  width: 1200px;
   height: 415px;
     }
 .white-h2{
@@ -178,12 +170,11 @@ body {
 /* вторая страница */
 .sorting-container{
   color:#ffffff;
-  background-color: #000000;
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  min-width: none;
-  }
+  width: 1200px;
+  height:412;
+}
 
 .catalog-header{
   font-weight: 700;
