@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="main-container">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -38,7 +39,7 @@
     </nav>
   </header>
 
-   <main class="catalog-page">
+   <main class="catalog-page main-container">
     <div class="sorting-container">
         <h1 class="catalog-header">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
@@ -78,7 +79,6 @@
            </ul>
        </fieldset>
        </form>
-
        <form class="filter" action="https://echo.htmlacademy.ru">
            <fieldset class="filter-group">
                <legend class="filter-title">Тип жилья:</legend>
@@ -103,6 +103,7 @@
            </li>
                </ul>
            </fieldset>
+             <p> Стоимость, ₽:</p>
            <button class="button button-blue" type="submit">Применить</button>
            <button class="button button-clear" type="reset">Сбросить</button>
          </form>
@@ -116,7 +117,6 @@
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
     </select>
-</section>
 <a href="#">
     <span class="visually-hidden">Показать карточки</span>
 </a>
@@ -126,43 +126,56 @@
 <a href="#">
     <span class="visually-hidden">Показать списком</span>
 </a>
-<ul class="choose-hotel-list">
+   </section>
+   <section class="hotels">
+    <ul class="choose-hotel-list">
     <li class="choose-hotel-item">
         <img class="choose-hotel-pic" src="images/hotels/hotel-amara.jpg" width="300" height="212" alt="#">
         <h3 class="hotel-title">Amara Resort & Spa</h3>
+        <div class="price">
         <p>Гостиница</p>
         <p>от 4000 ₽</p>
+        </div>
         <a class="button button-brown">Подробнее</a>
         <button class="button button-blue">В избранное</button>
+        <span>Рейтинг: 8,5</span>
     </li>
     <li class="choose-hotel-item">
         <img class="choose-hotel-pic" src="images/hotels/hotel-villas.jpg" width="300" height="212" alt="#">
         <h3 class="hotel-title">Villas at Poco Diablo</h3>
+        <div class="price">
         <p>Гостиница</p>
         <p>от 5000 ₽</p>
+        </div>
         <a class="button button-brown">Подробнее</a>
         <button class="button button-green">В избранном</button>
+        <span>Рейтинг: 9,2</span>
     </li>
     <li class="choose-hotel-item">
         <img class="choose-hotel-pic" src="images/hotels/hotel-desert.jpg" width="300" height="212" alt="#">
         <h3 class="hotel-title">Desert Quail Inn</h3>
+        <div class="price">
         <p>Гостиница</p>
         <p>от 2500 ₽</p>
+        </div>
         <a class="button button-brown">Подробнее</a>
         <button class="button button-blue">В избранное</button>
+        <span>Рейтинг: 6,9</span>
     </li>
     <li class="choose-hotel-item">
         <img class="choose-hotel-pic" src="images/hotels/hotel-green-tree.jpg" width="300" height="212" alt="#">
         <h3 class="hotel-title">GreenTree Inn</h3>
+        <div class="price">
         <p>Гостиница</p>
         <p>от 1500 ₽</p>
+        </div>
         <a class="button button-brown">Подробнее</a>
         <button class="button button-blue">В избранное</button>
+        <span>Рейтинг: 5,0</span>
     </li>
 </ul>
-
+</section>
 <ul class="pagination">
-
     <li class="pagination-item">
       <a class="pagination-link pagination-current">1</a>
     </li>
@@ -181,14 +194,13 @@
     <li class="pagination-item">
       <a class="pagination-link" href="#">10</a>
     </li>
-
   </ul>
     </main>
     <footer class="page-footer">
     <section class="subscribe-catalog">
       <h2 class="heading">Подпишитесь на рассылку</h2>
       <p>
-        Только полезная информация и никакого спама, честное бойскаутское!
+        Только полезная информация и никакого спама,<br> честное бойскаутское!
       </p>
       <form class="email-form" action="https://echo.htmlacademy.ru/">
         <label for="user-email">Email</label>
@@ -196,40 +208,42 @@
         <button class="button-big button-big-blue" type="submit">Подписаться</button>
       </form>
     </section>
-
-    <section class="footer-social">
-      <h3 class="visually-hidden">Социальные сети</h3>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="https://t.me/htmlacademy ">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">youtube</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="footer-contacts">
-      <h3 class="visually-hidden">Контакты</h3>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </section>
-    <section class="footer-logo">
-      <h3 class="visually-hidden">Логотип html-Academy</h3>
-      <p>
-        <a href="https://htmlacademy.ru/">
-          <img src="images/icons/html-academy.svg" alt="Логотип html-Academy">
+  <div class="footer-container">
+   <section class="footer-social">
+    <h3 class="visually-hidden">Социальные сети</h3>
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">ВКонтакте</span>
         </a>
-      </p>
-    </section>
+      </li>
+      <li class="footer-social-item">
+        <a href="https://t.me/htmlacademy ">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="footer-contacts">
+    <h3 class="visually-hidden">Контакты</h3>
+    <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+  </section>
+  <section class="footer-logo">
+    <h3 class="visually-hidden">Логотип html-Academy</h3>
+    <p>
+      <a href="https://htmlacademy.ru/">
+        <img src="images/icons/html-academy.svg" alt="Логотип html-Academy">
+      </a>
+    </p>
+  </section>
+</div>
   </footer>
+    </div>
   </body>
 </html>
