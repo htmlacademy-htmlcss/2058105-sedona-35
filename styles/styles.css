@@ -67,7 +67,6 @@ body{
   width: 268px;
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .navigation-user .navigation-link{
