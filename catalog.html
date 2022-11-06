@@ -63,57 +63,83 @@
          <ul class="filter-list reset-list">
          <li class="filter-item">
             <label class="control">
-                 <input class="control-input" type="checkbox" name="pool" checked>
-                 Бассейн
+                 <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                 <span class="control-mark"></span>
+                 <span>Бассейн</span>
             </label>
          </li>
          <li class="filter-item">
             <label class="control">
-            <input class="control-input" type="checkbox" name="parking" checked>
-             Парковка
+            <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+            <span class="control-mark"></span>
+            <span>Парковка</span>
          </label>
          </li>
          <li class="filter-item">
              <label class="control">
-             <input class="control-input" type="checkbox" name="internet" >
-             Wi-Fi
+             <input class="control-input visually-hidden" type="checkbox" name="internet" >
+             <span class="control-mark"></span>
+             <span>Wi-Fi</span>
          </label>
          </li>
              </ul>
          </fieldset>
-         </form>
-        <form class="filter" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-group">
+
+         <fieldset class="filter-group">
             <legend class="filter-title">Тип жилья:</legend>
             <ul class="filter-list reset-list">
           <li class="filter-item">
               <label class="control">
-              <input class="control-input" type="radio" name="type-hotel" value="hotel" checked>
-                  Гостиница
+              <input class="control-input visually-hidden" type="radio" name="type-hotel" value="hotel" checked>
+               Гостиница
+              <span class="control-mark"></span>
               </label>
           </li>
           <li class="filter-item">
               <label class="control">
-              <input class="control-input" type="radio" name="type-hotel" value="motel">
-              Мотель
+              <input class="control-input visually-hidden" type="radio" name="type-hotel" value="motel">
+               Мотель
+              <span class="control-mark"></span>
           </label>
           </li>
           <li class="filter-item">
               <label class="control">
-              <input class="control-input" type="radio" name="type-hotel"  value="apartments">
-              Апартаменты
+              <input class="control-input visually-hidden" type="radio" name="type-hotel"  value="apartments">
+               Апартаменты
+              <span class="control-mark"></span>
           </label>
           </li>
           </ul>
-          </fieldset>
-      </form>
-       <div class="filter-group-price">
-         <p> Стоимость, ₽:</p>
-       </div>
+        </fieldset>
+
+        <fieldset class="filter-group-price">
+         <legend class="filter-title">Стоимость, ₽:</legend>
+         <div class="wrapper-price">
+           <label>
+             <input class="range-input min-input" type="number" name="min-price" value="0">
+             <span class="fix-price">от</span>
+           </label>
+           <label>
+             <input class="range-input max-input" type="number" name="max-price" value="9000">
+             <span class="fix-price">до</span>
+           </label>
+         </div>
+         <div class="range-scale">
+           <div class="range-bar" style="left: 0; width: 226px">
+            <button type="button" class="range-toggle toggle-min">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button type="button" class="range-toggle toggle-max">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+          </div>
+         </div>
+        </fieldset>
        <div class="filter-group-button">
          <button class="button button-filter" type="submit">Применить</button>
          <button class="button button-clear" type="reset">Сбросить</button>
        </div>
+      </form>
      </section>
    </div>
 
@@ -240,8 +266,8 @@
         <form class="email-form" action="https://echo.htmlacademy.ru/">
           <label for="user-email">
           <span class="visually-hidden">Email</span></label>
-          <input type="email" name="user-email" id="user-email" value="Ваш e-mail">
-          <button class="button-big button-blue" type="submit">Подписаться</button>
+          <input class="input-subscribe" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail">
+          <button class="button-big button-blue button-border" type="submit">Подписаться</button>
         </form>
     </section>
   <div class="footer-container">
