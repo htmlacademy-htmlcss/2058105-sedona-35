@@ -183,7 +183,7 @@
     </footer>
     </div>
     <!--Модальное окно-->
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <h2 class="heading">Поиск гостиницы в Седоне</h2>
       <button class="modal-close-button" type="button">
@@ -208,12 +208,14 @@
       <div class="wrapper-label-2">
       <label for="adults" class="modal-label">Взрослые:</label>
       <div class="wrapper-count">
-        <button type="button" class="minus">
+        <button class="minus" type="button">
         <span class="visually-hidden">Минус</span>
+        <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="14" height="2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z"/></svg>
         </button>
         <input class="input-count" type="number" id="adults" name="adults" value="2" required>
-        <button type="button" class="plus">
+        <button class="plus" type="button">
         <span class="visually-hidden">Плюс</span>
+        <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
         </button>
       </div>
       </div>
@@ -225,12 +227,14 @@
         <span class="tooltip-content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
       </div>
         <div class="wrapper-count">
-        <button type="button" class="minus">
+        <button class="minus" type="button">
         <span class="visually-hidden">Минус</span>
+        <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="14" height="2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z"/></svg>
         </button>
         <input class="input-count" type="number" id="children" name="children" value="2">
-        <button type="button" class="plus">
+        <button class="plus" type="button">
         <span class="visually-hidden">Плюс</span>
+        <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
         </button>
       </div>
       </div>
