@@ -139,7 +139,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .navigation-user .navigation-link:hover,
 .navigation-user .navigation-link:focus {
   opacity: 60%;
@@ -247,6 +246,7 @@ body {
   background-image: url("../images/icons/welcome-bottom.svg"), url("../images/welcome-background.jpg");
   background-position: center bottom, center;
   background-repeat: no-repeat;
+  background-color: #333333;
 }
 
 .city {
@@ -419,7 +419,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
 .item-white {
   background-color: #ffffff;
 }
@@ -432,6 +431,7 @@ body {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333333;
   width: 1200px;
   padding-top: 96px;
   padding-bottom: 104px;
@@ -543,6 +543,7 @@ body {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333333;
   width: 1200px;
   padding: 70px;
   padding-top: 35px;
